@@ -1,0 +1,405 @@
+@font-face {
+    font-family: 'tan-pearl';
+    src: url('../fonts/TAN-PEARL.woff');
+}
+
+*,
+html,
+body {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+.window-part {
+    display: flex;
+    height: 100vh;
+    padding: 2%;
+    /* font-family: 'Courier New', Courier, monospace; */
+}
+
+.presentacion-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    /* height: 100vh; */
+
+    /* font-family: 'Courier New', Courier, monospace; */
+}
+
+.presentacion-line {
+    width: 45px;
+    height: 100%;
+    /* margin: 2% 0px 2% 35px; */
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #000;
+}
+
+.presentacion-content {
+    display: flex;
+    height: 660px;
+    align-self: center;
+    position: relative;
+}
+.presentacion-title-nombre {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* margin-bottom: 90px; */
+}
+.presentacion-title {
+    font-weight: 300;
+    text-align: end;
+    letter-spacing: 4px;
+    margin-bottom: 80px;
+}
+.presentacion-nombre {
+    font-family: 'tan-pearl';
+    font-size: 48px;
+    font-weight: 300;
+    text-align: end;
+    width: 500px;
+}
+
+.presentacion-foto {
+    height: 100%;
+    align-self: center;
+    margin-left: 65px;
+}
+
+.portafolio-title {
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 10px;
+    transform: rotate(-90deg);
+    width: 0px;
+    position: absolute;
+    top: 260px;
+    right: -50px;
+}
+
+/* ================================================================================================================ */
+
+.sobre-mi-content {
+    position: relative;
+}
+.sobre-mi-line {
+    background-color: #000;
+    width: 360px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.sobre-mi-line2 {
+    background-color: #000;
+    width: 4px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -40%;
+}
+
+.sobre-mi-text {
+    width: 45%;
+    text-align: end;
+    margin-left: 55%;
+    padding-right: 100px;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    position: relative;
+}
+.sobre-mi-title {
+    font-family: 'tan-pearl';
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.sobre-mi-texto {
+    font-size: 22px;
+    padding-bottom: 20%;
+}
+
+/* ================================================================================================================ */
+
+.formacion-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 100px;
+    align-items: flex-end;
+}
+
+/* .formacion-column1 {
+    margin-bottom: 70px;
+    margin-right: 40px;
+    text-align: end;
+} */
+
+.formacion-subcolumn {
+    display: flex;
+    text-align: end;
+}
+
+.formacion-text-content {
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.formacion-texto {
+    margin-bottom: 30px;
+}
+
+.formacion-subtitle {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.formacion-column2 {
+    margin-bottom: 90px;
+}
+
+.formacion-title {
+    font-family: 'tan-pearl';
+    font-size: 50px;
+    margin-bottom: 80px;
+    font-weight: 300;
+    text-align: end;
+}
+
+.formacion-img {
+    width: 500px;
+}
+.formacion-cursos {
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* ============================================================================================== */
+.proyectos-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 100px;
+    padding-left: 100px;
+    text-align: end;
+    justify-content: center;
+    position: relative;
+    /* background-color: #000; */
+}
+
+.proyecto-collage-line {
+    position: absolute;
+    height: 100%;
+    background-color: #000;
+    width: 4px;
+    top: 0;
+    left: 0;
+}
+
+.protectos-collage-title {
+    font-size: 50px;
+    font-family: 'tan-pearl';
+    font-weight: 300;
+    margin-bottom: 90px;
+}
+.proyectos-container-collage {
+    display: flex;
+    width: 100%;
+    gap: 15px;
+    justify-content: center;
+}
+
+.proyectos-img-collage {
+    width: 530px;
+    /* height: 200px; */
+}
+
+.proyectos-collage-column {
+    width: 530px;
+}
+
+.collage-1 {
+    background: url('../imgs/proyectos-collage-img-ref.png');
+    height: 340px;
+    margin-bottom: 15px;
+}
+
+.collage-2 {
+    background: url('../imgs/proyectos-collage-img-ref.png');
+    height: 260px;
+}
+
+.collage-3 {
+    background: url('../imgs/proyectos-collage-img-ref.png');
+    height: 460px;
+    margin-bottom: 15px;
+}
+
+.collage-4 {
+    background: url('../imgs/proyectos-collage-img-ref.png');
+    height: 140px;
+}
+
+.collage-5 {
+    background: url('../imgs/proyectos-collage-img-ref.png');
+    height: 200px;
+    margin-bottom: 15px;
+}
+
+.collage-6 {
+    background: url('../imgs/proyectos-collage-img-ref.png');
+    height: 400px;
+}
+
+/*  ====================================================================== */
+
+.proyectos-content-2 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 100px;
+    padding-left: 100px;
+    text-align: start;
+    justify-content: center;
+    position: relative;
+    /* background-color: #000; */
+}
+
+.proyecto-line {
+    position: absolute;
+    height: 100%;
+    background-color: #000;
+    width: 4px;
+    top: 0;
+    right: 0;
+}
+
+.protectos-title {
+    font-size: 50px;
+    font-family: 'tan-pearl';
+    font-weight: 300;
+    margin-bottom: 70px;
+}
+.proyectos-collage {
+    display: flex;
+    width: 100%;
+    gap: 15px;
+    justify-content: center;
+}
+.proyectos-columns {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+.proyectos-column {
+    width: 500px;
+}
+.proyectos-img {
+    width: 450px;
+    height: 550px;
+    background-color: #000;
+
+    margin-bottom: 30px;
+    /* height: 200px; */
+}
+
+.proyecto-img-1 {
+    background: url('../imgs/vivienda-multifamiliar.png');
+}
+
+.proyecto-img-2 {
+    background: url('../imgs/centro-sociosanitario-geriatrico.png');
+}
+
+.proyecto-img-3 {
+    background: url('../imgs/centro-sociosanitario-geriatrico.png');
+}
+
+.proyecto-title {
+    margin-bottom: 10px;
+}
+
+.proyecto-text {
+    width: 450px;
+}
+
+.proyecto-backhover-img {
+    background-color: #00000038;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.proyectos-img:hover .proyecto-backhover-img {
+    opacity: 1;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+.btn-ver-proyecto {
+    background-color: #fff;
+    width: 250px;
+    height: 50px;
+    text-decoration: none;
+    margin-bottom: 60px;
+    text-align: center;
+    line-height: 50px;
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    transition: transform 0.5s;
+}
+.btn-ver-proyecto:hover {
+    transform: translateY(-10px);
+}
+
+/* ==================================================================================== */
+.contacto-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding-right: 100px;
+    padding-left: 100px;
+    align-items: flex-end;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.contacto-title {
+    font-family: 'tan-pearl';
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 100px;
+}
+
+.contacto-item {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.contacto-item i {
+    margin-right: 10px;
+}
+.fa-instagram {
+    font-size: 25px;
+}
