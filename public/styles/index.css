@@ -2,7 +2,27 @@
     font-family: 'tan-pearl';
     src: url('../fonts/TAN-PEARL.woff');
 }
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(165, 165, 165);
+    border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(165, 165, 165);
+    border-radius: 50px;
+}
 *,
 html,
 body {
@@ -42,7 +62,7 @@ body {
 
 .presentacion-content {
     display: flex;
-    height: 660px;
+    height: 70%;
     align-self: center;
     position: relative;
 }
@@ -83,7 +103,7 @@ body {
     right: -50px;
 }
 
-/* ================================================================================================================ */
+/* =================================================== sobre mi ============================================================= */
 
 .sobre-mi-content {
     position: relative;
@@ -128,7 +148,7 @@ body {
     padding-bottom: 20%;
 }
 
-/* ================================================================================================================ */
+/* =================================================== formacion ============================================================= */
 
 .formacion-content {
     height: 100%;
@@ -216,7 +236,7 @@ body {
     font-size: 50px;
     font-family: 'tan-pearl';
     font-weight: 300;
-    margin-bottom: 90px;
+    margin-bottom: 60px;
 }
 .proyectos-container-collage {
     display: flex;
@@ -226,45 +246,78 @@ body {
 }
 
 .proyectos-img-collage {
-    width: 530px;
+    width: 100%;
     /* height: 200px; */
 }
 
 .proyectos-collage-column {
-    width: 530px;
+    width: 33%;
+}
+.collage-display-movile {
+    display: none;
 }
 
 .collage-1 {
-    background: url('../imgs/proyectos-collage-img-ref.png');
+    background: url('../imgs/collage3.jpg');
     height: 340px;
+    background-size: cover;
+    background-position: center;
     margin-bottom: 15px;
+    /* -webkit-filter: grayscale(1);
+    filter: gray;
+    filter: grayscale(1); */
 }
 
 .collage-2 {
-    background: url('../imgs/proyectos-collage-img-ref.png');
+    background: url('../imgs/collage2.jpg');
+    background-size: cover;
+    background-position: center;
     height: 260px;
+    /* -webkit-filter: grayscale(1);
+    filter: gray;
+    filter: grayscale(1); */
 }
 
 .collage-3 {
-    background: url('../imgs/proyectos-collage-img-ref.png');
+    background: url('../imgs/collage1.jpg');
+    background-size: cover;
+    background-position: center;
     height: 460px;
     margin-bottom: 15px;
+    /* -webkit-filter: grayscale(1);
+    filter: gray;
+    filter: grayscale(1); */
 }
 
 .collage-4 {
-    background: url('../imgs/proyectos-collage-img-ref.png');
+    background: url('../imgs/collage4.jpg');
+    background-size: cover;
+    background-position: center;
     height: 140px;
+    /* -webkit-filter: grayscale(1);
+    filter: gray;
+    filter: grayscale(1); */
 }
 
 .collage-5 {
-    background: url('../imgs/proyectos-collage-img-ref.png');
+    background: url('../imgs/collage5.jpg');
+    background-size: cover;
+    background-position: center;
     height: 200px;
     margin-bottom: 15px;
+    /* -webkit-filter: grayscale(1);
+    filter: gray;
+    filter: grayscale(1); */
 }
 
 .collage-6 {
-    background: url('../imgs/proyectos-collage-img-ref.png');
+    background: url('../imgs/collage6.jpg');
+    background-size: cover;
+    background-position: center;
     height: 400px;
+    /* -webkit-filter: grayscale(1);
+    filter: gray;
+    filter: grayscale(1); */
 }
 
 /*  ====================================================================== */
@@ -310,10 +363,10 @@ body {
 }
 
 .proyectos-column {
-    width: 500px;
+    width: 33%;
 }
 .proyectos-img {
-    width: 450px;
+    width: 100%;
     height: 550px;
     background-color: #000;
 
@@ -322,15 +375,21 @@ body {
 }
 
 .proyecto-img-1 {
-    background: url('../imgs/vivienda-multifamiliar.png');
+    background: url('../imgs/MULTIFAMILIAR.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .proyecto-img-2 {
-    background: url('../imgs/centro-sociosanitario-geriatrico.png');
+    background: url('../imgs/CENTRO_SOCIOSANITARIO.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .proyecto-img-3 {
-    background: url('../imgs/centro-sociosanitario-geriatrico.png');
+    background: url('../imgs/CENTRO_DE_ESTIMULACION.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .proyecto-title {
@@ -338,7 +397,7 @@ body {
 }
 
 .proyecto-text {
-    width: 450px;
+    width: 100%;
 }
 
 .proyecto-backhover-img {
@@ -402,4 +461,1766 @@ a {
 }
 .fa-instagram {
     font-size: 25px;
+}
+
+@media screen and (max-width: 1440px) {
+    .presentacion-nombre {
+        font-family: 'tan-pearl';
+        font-size: 44px;
+        font-weight: 300;
+        text-align: end;
+        width: 500px;
+    }
+
+    /*  ====================================================================== */
+
+    .proyectos-content-2 {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-right: 100px;
+        padding-left: 100px;
+        text-align: start;
+        justify-content: center;
+        position: relative;
+        /* background-color: #000; */
+    }
+
+    .proyecto-line {
+        position: absolute;
+        height: 100%;
+        background-color: #000;
+        width: 4px;
+        top: 0;
+        right: 0;
+    }
+
+    .protectos-title {
+        font-size: 50px;
+        font-family: 'tan-pearl';
+        font-weight: 300;
+        margin-bottom: 70px;
+    }
+    .proyectos-collage {
+        display: flex;
+        width: 100%;
+        gap: 15px;
+        justify-content: center;
+    }
+    .proyectos-columns {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .proyectos-column {
+        width: 33%;
+    }
+    .proyectos-img {
+        width: 100%;
+        height: 450px;
+        background-color: #000;
+
+        margin-bottom: 30px;
+        /* height: 200px; */
+    }
+
+    .proyecto-img-1 {
+        background: url('../imgs/MULTIFAMILIAR.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .proyecto-img-2 {
+        background: url('../imgs/CENTRO_SOCIOSANITARIO.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .proyecto-img-3 {
+        background: url('../imgs/CENTRO_DE_ESTIMULACION.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .proyecto-title {
+        margin-bottom: 10px;
+    }
+
+    .proyecto-text {
+        width: 100%;
+    }
+
+    .proyecto-backhover-img {
+        background-color: #00000038;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+    .proyectos-img:hover .proyecto-backhover-img {
+        opacity: 1;
+    }
+
+    a {
+        text-decoration: none;
+        font-family: 'Raleway', sans-serif;
+    }
+    .btn-ver-proyecto {
+        background-color: #fff;
+        width: 250px;
+        height: 50px;
+        text-decoration: none;
+        margin-bottom: 60px;
+        text-align: center;
+        line-height: 50px;
+        color: #000;
+        font-family: 'Raleway', sans-serif;
+        transition: transform 0.5s;
+    }
+    .btn-ver-proyecto:hover {
+        transform: translateY(-10px);
+    }
+}
+
+/* tablet horizontal */
+@media screen and (max-width: 1200px) {
+    .presentacion-line {
+        width: 25px;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: #000;
+    }
+
+    .presentacion-content {
+        display: flex;
+        height: 50%;
+        align-self: center;
+        position: relative;
+    }
+
+    .presentacion-title {
+        font-weight: 300;
+        text-align: end;
+        letter-spacing: 4px;
+        margin-bottom: 70px;
+        font-size: 15px;
+    }
+    .presentacion-nombre {
+        font-family: 'tan-pearl';
+        font-size: 36px;
+        font-weight: 300;
+        text-align: end;
+        width: 370px;
+    }
+
+    .presentacion-foto {
+        height: auto;
+        height: 100%;
+        align-self: center;
+        margin-left: 65px;
+    }
+
+    .portafolio-title {
+        font-size: 20px;
+        font-weight: 300;
+        letter-spacing: 10px;
+        transform: rotate(-90deg);
+        width: 0px;
+        position: absolute;
+        top: 200px;
+        right: -30px;
+    }
+
+    /* ================================================================================================================ */
+
+    .sobre-mi-content {
+        position: relative;
+    }
+    .sobre-mi-line {
+        background-color: #000;
+        width: 300px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .sobre-mi-line2 {
+        background-color: #000;
+        width: 3px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: -40%;
+    }
+
+    .sobre-mi-text {
+        width: 45%;
+        text-align: end;
+        margin-left: 55%;
+        padding-right: 70px;
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+        position: relative;
+    }
+    .sobre-mi-title {
+        font-family: 'tan-pearl';
+        font-size: 45px;
+        margin-bottom: 20px;
+        font-weight: 300;
+    }
+
+    .sobre-mi-texto {
+        font-size: 18px;
+        padding-bottom: 15%;
+    }
+
+    /* =================================================== formacion ============================================================= */
+
+    .formacion-content {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 70px;
+        align-items: flex-end;
+    }
+
+    .formacion-subcolumn {
+        display: flex;
+        text-align: end;
+    }
+
+    .formacion-text-content {
+        padding-right: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .formacion-texto {
+        margin-bottom: 20px;
+        font-size: 13px;
+    }
+    .formacion-texto-2 {
+        font-size: 13px;
+    }
+
+    .formacion-subtitle {
+        font-weight: bold;
+        font-size: 18px;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    }
+
+    .formacion-column2 {
+        margin-bottom: 70px;
+    }
+
+    .formacion-title {
+        font-family: 'tan-pearl';
+        font-size: 45px;
+        margin-bottom: 70px;
+        font-weight: 300;
+        text-align: end;
+    }
+
+    .formacion-img {
+        width: 500px;
+    }
+    .formacion-cursos {
+        font-size: 25px;
+        margin-bottom: 25px;
+        font-weight: 600;
+    }
+
+    /* ============================================================================================== */
+    .proyectos-content {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-right: 100px;
+        padding-left: 100px;
+        text-align: end;
+        justify-content: center;
+        position: relative;
+        /* background-color: #000; */
+    }
+
+    .proyecto-collage-line {
+        position: absolute;
+        height: 100%;
+        background-color: #000;
+        width: 4px;
+        top: 0;
+        left: 0;
+    }
+
+    .protectos-collage-title {
+        font-size: 45px;
+        font-family: 'tan-pearl';
+        font-weight: 300;
+        margin-bottom: 60px;
+    }
+    .proyectos-container-collage {
+        display: flex;
+        width: 100%;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .proyectos-img-collage {
+        width: 100%;
+        /* height: 200px; */
+    }
+
+    .proyectos-collage-column {
+        width: 33%;
+    }
+
+    .collage-1 {
+        background: url('../imgs/collage3.jpg');
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 15px;
+        /* -webkit-filter: grayscale(1);
+    filter: gray;
+    filter: grayscale(1); */
+    }
+
+    .collage-2 {
+        background: url('../imgs/collage2.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 220px;
+        /* -webkit-filter: grayscale(1);
+    filter: gray;
+    filter: grayscale(1); */
+    }
+
+    .collage-3 {
+        background: url('../imgs/collage1.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 420px;
+        margin-bottom: 15px;
+        /* -webkit-filter: grayscale(1);
+    filter: gray;
+    filter: grayscale(1); */
+    }
+
+    .collage-4 {
+        background: url('../imgs/collage4.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 100px;
+        /* -webkit-filter: grayscale(1);
+    filter: gray;
+    filter: grayscale(1); */
+    }
+
+    .collage-5 {
+        background: url('../imgs/collage5.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 160px;
+        margin-bottom: 15px;
+        /* -webkit-filter: grayscale(1);
+    filter: gray;
+    filter: grayscale(1); */
+    }
+
+    .collage-6 {
+        background: url('../imgs/collage6.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 360px;
+        /* -webkit-filter: grayscale(1);
+    filter: gray;
+    filter: grayscale(1); */
+    }
+
+    /*  ====================================================================== */
+
+    .proyectos-content-2 {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-right: 50px;
+        padding-left: 50px;
+        text-align: start;
+        justify-content: center;
+        position: relative;
+        /* background-color: #000; */
+    }
+
+    .proyecto-line {
+        position: absolute;
+        height: 100%;
+        background-color: #000;
+        width: 4px;
+        top: 0;
+        right: 0;
+    }
+
+    .protectos-title {
+        font-size: 45px;
+        font-family: 'tan-pearl';
+        font-weight: 300;
+        margin-bottom: 70px;
+    }
+    .proyectos-collage {
+        display: flex;
+        width: 100%;
+        gap: 15px;
+        justify-content: center;
+    }
+    .proyectos-columns {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .proyectos-column {
+        width: 33%;
+    }
+    .proyectos-img {
+        width: 100%;
+        height: 350px;
+        background-color: #000;
+
+        margin-bottom: 30px;
+        /* height: 200px; */
+    }
+
+    .proyecto-img-1 {
+        background: url('../imgs/MULTIFAMILIAR.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .proyecto-img-2 {
+        background: url('../imgs/CENTRO_SOCIOSANITARIO.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .proyecto-img-3 {
+        background: url('../imgs/CENTRO_DE_ESTIMULACION.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .proyecto-title {
+        margin-bottom: 10px;
+    }
+
+    .proyecto-text {
+        width: 100%;
+    }
+
+    .proyecto-backhover-img {
+        background-color: #00000038;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+    .proyectos-img:hover .proyecto-backhover-img {
+        opacity: 1;
+    }
+
+    a {
+        text-decoration: none;
+        font-family: 'Raleway', sans-serif;
+    }
+    .btn-ver-proyecto {
+        background-color: #fff;
+        width: 200px;
+        height: 50px;
+        text-decoration: none;
+        margin-bottom: 60px;
+        text-align: center;
+        line-height: 50px;
+        color: #000;
+        font-family: 'Raleway', sans-serif;
+        transition: transform 0.5s;
+    }
+    .btn-ver-proyecto:hover {
+        transform: translateY(-10px);
+    }
+
+    /* ==================================================================================== */
+    .contacto-content {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        padding-right: 100px;
+        padding-left: 100px;
+        align-items: flex-end;
+        position: relative;
+        padding-bottom: 100px;
+    }
+
+    .contacto-title {
+        font-family: 'tan-pearl';
+        font-size: 45px;
+        font-weight: 300;
+        margin-bottom: 100px;
+    }
+
+    .contacto-item {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    .contacto-item i {
+        margin-right: 10px;
+    }
+    .fa-instagram {
+        font-size: 25px;
+    }
+}
+
+/* celular herizontal */
+@media screen and (max-width: 950px) and (max-height: 1024px) {
+    .presentacion-line {
+        width: 15px;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: #000;
+    }
+
+    .presentacion-content {
+        display: flex;
+        height: 70%;
+        align-self: center;
+        position: relative;
+    }
+
+    .presentacion-title {
+        font-weight: 300;
+        text-align: end;
+        letter-spacing: 4px;
+        margin-bottom: 40px;
+        font-size: 12px;
+    }
+    .presentacion-nombre {
+        font-family: 'tan-pearl';
+        font-size: 30px;
+        font-weight: 300;
+        text-align: end;
+        width: 310px;
+    }
+
+    .presentacion-foto {
+        height: auto;
+        height: 100%;
+        align-self: center;
+        margin-left: 65px;
+    }
+
+    .portafolio-title {
+        font-size: 10px;
+        font-weight: 300;
+        letter-spacing: 10px;
+        transform: rotate(-90deg);
+        width: 0px;
+        position: absolute;
+        top: 150px;
+        right: -30px;
+    }
+    /* ================================================================================================================ */
+
+    .sobre-mi-content {
+        position: relative;
+    }
+    .sobre-mi-line {
+        background-color: #000;
+        width: 150px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .sobre-mi-line2 {
+        background-color: #000;
+        width: 2px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: -35%;
+        /* display: none; */
+    }
+
+    .sobre-mi-text {
+        width: 60%;
+        text-align: end;
+        margin-left: 40%;
+        padding-right: 40px;
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+        position: relative;
+    }
+    .sobre-mi-title {
+        font-family: 'tan-pearl';
+        font-size: 30px;
+        margin-bottom: 20px;
+        font-weight: 300;
+    }
+
+    .sobre-mi-texto {
+        font-size: 13px;
+        padding-bottom: 10%;
+    }
+    /* =================================================== formacion ============================================================= */
+
+    .formacion-content {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 50px;
+        align-items: flex-end;
+    }
+
+    .formacion-subcolumn {
+        display: flex;
+        text-align: end;
+    }
+
+    .formacion-text-content {
+        padding-right: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .formacion-texto {
+        margin-bottom: 5px;
+        font-size: 10px;
+    }
+    .formacion-texto-2 {
+        font-size: 10px;
+    }
+
+    .formacion-subtitle {
+        font-weight: bold;
+        font-size: 13px;
+        letter-spacing: 1px;
+        margin-bottom: 7px;
+    }
+
+    .formacion-column2 {
+        margin-bottom: 20px;
+    }
+
+    .formacion-title {
+        font-family: 'tan-pearl';
+        font-size: 30px;
+        margin-bottom: 30px;
+        font-weight: 300;
+        text-align: end;
+    }
+
+    .formacion-img {
+        width: 200px;
+        height: 200px;
+    }
+    .formacion-cursos {
+        font-size: 16px;
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+
+    /* ============================================================================================== */
+    .proyectos-content {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-right: 100px;
+        padding-left: 100px;
+        text-align: end;
+        justify-content: center;
+        position: relative;
+        /* background-color: #000; */
+    }
+
+    .proyecto-collage-line {
+        position: absolute;
+        height: 100%;
+        background-color: #000;
+        width: 4px;
+        top: 0;
+        left: 0;
+    }
+
+    .protectos-collage-title {
+        font-size: 30px;
+        font-family: 'tan-pearl';
+        font-weight: 300;
+        margin-bottom: 30px;
+    }
+    .proyectos-container-collage {
+        display: flex;
+        width: 100%;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .proyectos-img-collage {
+        width: 100%;
+        /* height: 200px; */
+    }
+
+    .proyectos-collage-column {
+        width: 33%;
+    }
+
+    .collage-1 {
+        background: url('../imgs/collage3.jpg');
+        height: 160px;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 15px;
+        /* -webkit-filter: grayscale(1);
+    filter: gray;
+    filter: grayscale(1); */
+    }
+
+    .collage-2 {
+        background: url('../imgs/collage2.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 90px;
+        /* -webkit-filter: grayscale(1);
+    filter: gray;
+    filter: grayscale(1); */
+    }
+
+    .collage-3 {
+        background: url('../imgs/collage1.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 200px;
+        margin-bottom: 15px;
+        /* -webkit-filter: grayscale(1);
+    filter: gray;
+    filter: grayscale(1); */
+    }
+
+    .collage-4 {
+        background: url('../imgs/collage4.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 50px;
+        /* -webkit-filter: grayscale(1);
+    filter: gray;
+    filter: grayscale(1); */
+    }
+
+    .collage-5 {
+        background: url('../imgs/collage5.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 80px;
+        margin-bottom: 15px;
+        /* -webkit-filter: grayscale(1);
+    filter: gray;
+    filter: grayscale(1); */
+    }
+
+    .collage-6 {
+        background: url('../imgs/collage6.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 170px;
+        /* -webkit-filter: grayscale(1);
+    filter: gray;
+    filter: grayscale(1); */
+    }
+    /*  ====================================================================== */
+
+    .proyectos-content-2 {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-right: 50px;
+        padding-left: 50px;
+        text-align: start;
+        justify-content: center;
+        position: relative;
+        /* background-color: #000; */
+    }
+
+    .proyecto-line {
+        position: absolute;
+        height: 100%;
+        background-color: #000;
+        width: 4px;
+        top: 0;
+        right: 0;
+    }
+
+    .protectos-title {
+        font-size: 30px;
+        font-family: 'tan-pearl';
+        font-weight: 300;
+        margin-bottom: 40px;
+    }
+    .proyectos-collage {
+        display: flex;
+        width: 100%;
+        gap: 15px;
+        justify-content: center;
+    }
+    .proyectos-columns {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .proyectos-column {
+        width: 30%;
+    }
+    .proyectos-img {
+        width: 100%;
+        height: 150px;
+        background-color: #000;
+
+        margin-bottom: 20px;
+        /* height: 200px; */
+    }
+
+    .proyecto-img-1 {
+        background: url('../imgs/MULTIFAMILIAR.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .proyecto-img-2 {
+        background: url('../imgs/CENTRO_SOCIOSANITARIO.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .proyecto-img-3 {
+        background: url('../imgs/CENTRO_DE_ESTIMULACION.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .proyecto-title {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .proyecto-text {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .proyecto-backhover-img {
+        background-color: #00000038;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+    .proyectos-img:hover .proyecto-backhover-img {
+        opacity: 1;
+    }
+
+    a {
+        text-decoration: none;
+        font-family: 'Raleway', sans-serif;
+    }
+    .btn-ver-proyecto {
+        background-color: #fff;
+        width: 150px;
+        height: 40px;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        margin-bottom: 30px;
+        text-align: center;
+        line-height: 50px;
+        color: #000;
+        font-family: 'Raleway', sans-serif;
+        transition: transform 0.5s;
+    }
+    .btn-ver-proyecto:hover {
+        transform: translateY(-10px);
+    }
+    /* ==================================================================================== */
+    .contacto-content {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        padding-right: 100px;
+        padding-left: 100px;
+        align-items: flex-end;
+        position: relative;
+        padding-bottom: 50px;
+    }
+
+    .contacto-title {
+        font-family: 'tan-pearl';
+        font-size: 30px;
+        font-weight: 300;
+        margin-bottom: 50px;
+    }
+
+    .contacto-item {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    .contacto-item i {
+        margin-right: 10px;
+    }
+    .fa-instagram {
+        font-size: 25px;
+    }
+}
+/* tablet vertical */
+
+@media screen and (max-width: 950px) and (min-height: 1000px) {
+    .presentacion-line {
+        width: 15px;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: #000;
+    }
+
+    .presentacion-content {
+        display: flex;
+        height: 35%;
+        align-self: center;
+        position: relative;
+    }
+
+    .presentacion-title {
+        font-weight: 300;
+        text-align: end;
+        letter-spacing: 4px;
+        margin-bottom: 40px;
+        font-size: 12px;
+    }
+    .presentacion-nombre {
+        font-family: 'tan-pearl';
+        font-size: 30px;
+        font-weight: 300;
+        text-align: end;
+        width: 310px;
+    }
+
+    .presentacion-foto {
+        height: auto;
+        height: 100%;
+        align-self: center;
+        margin-left: 65px;
+    }
+
+    .portafolio-title {
+        font-size: 15px;
+        font-weight: 300;
+        letter-spacing: 10px;
+        transform: rotate(-90deg);
+        width: 0px;
+        position: absolute;
+        top: 175px;
+        right: -30px;
+    }
+    /* ================================================================================================================ */
+
+    .sobre-mi-content {
+        position: relative;
+    }
+    .sobre-mi-line {
+        background-color: #000;
+        width: 200px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .sobre-mi-line2 {
+        background-color: #000;
+        width: 3px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: -45%;
+        display: none;
+    }
+
+    .sobre-mi-text {
+        width: 55%;
+        text-align: end;
+        margin-left: 45%;
+        padding-right: 50px;
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+        position: relative;
+    }
+    .sobre-mi-title {
+        font-family: 'tan-pearl';
+        font-size: 45px;
+        margin-bottom: 20px;
+        font-weight: 300;
+    }
+
+    .sobre-mi-texto {
+        font-size: 18px;
+        padding-bottom: 20%;
+    }
+    /* =================================================== formacion ============================================================= */
+
+    .formacion-content {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 50px;
+        align-items: flex-end;
+    }
+
+    .formacion-subcolumn {
+        display: flex;
+        text-align: end;
+    }
+
+    .formacion-text-content {
+        padding-right: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .formacion-texto {
+        margin-bottom: 15px;
+        font-size: 13px;
+    }
+    .formacion-texto-2 {
+        font-size: 13px;
+    }
+
+    .formacion-subtitle {
+        font-weight: bold;
+        font-size: 16px;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    }
+
+    .formacion-column2 {
+        margin-bottom: 70px;
+    }
+
+    .formacion-title {
+        font-family: 'tan-pearl';
+        font-size: 45px;
+        margin-bottom: 70px;
+        font-weight: 300;
+        text-align: end;
+    }
+
+    .formacion-img {
+        width: 350px;
+        height: 350px;
+    }
+    .formacion-cursos {
+        font-size: 20px;
+        margin-bottom: 20px;
+        font-weight: 600;
+    }
+    /* =================================================================================================== */
+    .protectos-collage-title {
+        font-size: 45px;
+        font-family: 'tan-pearl';
+        font-weight: 300;
+        margin-bottom: 60px;
+    }
+    /*  ====================================================================== */
+
+    .proyectos-content-2 {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-right: 50px;
+        padding-left: 50px;
+        text-align: start;
+        justify-content: center;
+        position: relative;
+        /* background-color: #000; */
+    }
+
+    .proyecto-line {
+        position: absolute;
+        height: 100%;
+        background-color: #000;
+        width: 4px;
+        top: 0;
+        right: 0;
+    }
+
+    .protectos-title {
+        font-size: 45px;
+        font-family: 'tan-pearl';
+        font-weight: 300;
+        margin-bottom: 40px;
+    }
+    .proyectos-collage {
+        display: flex;
+        width: 100%;
+        gap: 15px;
+        justify-content: center;
+    }
+    .proyectos-columns {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .proyectos-column {
+        width: 70%;
+    }
+    .proyectos-img {
+        width: 100%;
+        height: 200px;
+        background-color: #000;
+
+        margin-bottom: 20px;
+        /* height: 200px; */
+    }
+
+    .proyecto-img-1 {
+        background: url('../imgs/MULTIFAMILIAR.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .proyecto-img-2 {
+        background: url('../imgs/CENTRO_SOCIOSANITARIO.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .proyecto-img-3 {
+        background: url('../imgs/CENTRO_DE_ESTIMULACION.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .proyecto-title {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .proyecto-text {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .proyecto-backhover-img {
+        background-color: #00000038;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+    .proyectos-img:hover .proyecto-backhover-img {
+        opacity: 1;
+    }
+
+    a {
+        text-decoration: none;
+        font-family: 'Raleway', sans-serif;
+    }
+    .btn-ver-proyecto {
+        background-color: #fff;
+        width: 150px;
+        height: 40px;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        margin-bottom: 30px;
+        text-align: center;
+        line-height: 50px;
+        color: #000;
+        font-family: 'Raleway', sans-serif;
+        transition: transform 0.5s;
+    }
+    .btn-ver-proyecto:hover {
+        transform: translateY(-10px);
+    }
+    /* ==================================================================================== */
+    .contacto-content {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        padding-right: 100px;
+        padding-left: 100px;
+        align-items: flex-end;
+        position: relative;
+        padding-bottom: 50px;
+    }
+
+    .contacto-title {
+        font-family: 'tan-pearl';
+        font-size: 45px;
+        font-weight: 300;
+        margin-bottom: 50px;
+    }
+
+    .contacto-item {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    .contacto-item i {
+        margin-right: 10px;
+    }
+    .fa-instagram {
+        font-size: 25px;
+    }
+}
+/* celular vertical */
+
+@media screen and (max-width: 450px) {
+    .presentacion-line {
+        width: 10px;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: #000;
+    }
+
+    .presentacion-content {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        height: 70%;
+
+        align-items: center;
+        position: relative;
+    }
+    .presentacion-title-nombre {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        /* margin-bottom: 90px; */
+    }
+    .presentacion-title {
+        font-weight: 300;
+        text-align: end;
+        letter-spacing: 4px;
+        margin-bottom: 40px;
+        font-size: 10px;
+    }
+    .presentacion-nombre {
+        font-family: 'tan-pearl';
+        font-size: 22px;
+        font-weight: 300;
+        text-align: end;
+        width: 230px;
+    }
+
+    .presentacion-foto {
+        height: auto;
+        height: 65%;
+        align-self: center;
+        margin-left: 0;
+
+        margin-bottom: 30px;
+    }
+
+    .portafolio-title {
+        font-size: 15px;
+        font-weight: 300;
+        letter-spacing: 10px;
+        transform: rotate(-90deg);
+        width: 0px;
+        position: absolute;
+        top: 175px;
+        right: -30px;
+    }
+    /* ================================================================================================================ */
+
+    .sobre-mi-content {
+        position: relative;
+    }
+    .sobre-mi-line {
+        background-color: #000;
+        width: 10px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .sobre-mi-line2 {
+        background-color: #000;
+        width: 2px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: -35%;
+        display: none;
+    }
+
+    .sobre-mi-text {
+        width: 80%;
+        text-align: end;
+        margin-left: 20%;
+        padding-right: 40px;
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+        position: relative;
+    }
+    .sobre-mi-title {
+        font-family: 'tan-pearl';
+        font-size: 30px;
+        margin-bottom: 20px;
+        font-weight: 300;
+    }
+
+    .sobre-mi-texto {
+        font-size: 13px;
+        padding-bottom: 20%;
+    }
+    /* =================================================== formacion ============================================================= */
+
+    .formacion-content {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-right: 0px;
+        align-items: flex-end;
+        padding: 0px 45px;
+    }
+
+    .formacion-subcolumn {
+        display: flex;
+        text-align: end;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .formacion-text-content {
+        padding-right: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .formacion-texto {
+        margin-bottom: 5px;
+        font-size: 10px;
+    }
+    .formacion-texto-2 {
+        font-size: 10px;
+    }
+
+    .formacion-subtitle {
+        font-weight: bold;
+        font-size: 13px;
+        letter-spacing: 1px;
+        margin-bottom: 7px;
+    }
+
+    .formacion-column2 {
+        margin-bottom: 20px;
+    }
+
+    .formacion-title {
+        font-family: 'tan-pearl';
+        font-size: 30px;
+        margin-bottom: 30px;
+        font-weight: 300;
+        text-align: end;
+    }
+
+    .formacion-img {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 20px;
+    }
+    .formacion-cursos {
+        font-size: 16px;
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+
+    /* ============================================================================================== */
+    .proyectos-content {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-right: 30px;
+        padding-left: 30px;
+        text-align: end;
+        justify-content: center;
+        position: relative;
+        /* background-color: #000; */
+    }
+
+    .proyecto-collage-line {
+        position: absolute;
+        height: 100%;
+        background-color: #000;
+        width: 4px;
+        top: 0;
+        left: 0;
+    }
+
+    .protectos-collage-title {
+        font-size: 30px;
+        font-family: 'tan-pearl';
+        font-weight: 300;
+        margin-bottom: 30px;
+    }
+    .proyectos-container-collage {
+        display: flex;
+        width: 100%;
+        gap: 15px;
+        justify-content: center;
+    }
+    .proyectos-collage-column3 {
+        display: none;
+    }
+    .collage-display-movile {
+        display: block;
+    }
+
+    .proyectos-img-collage {
+        width: 100%;
+        /* height: 200px; */
+    }
+
+    .proyectos-collage-column {
+        width: 50%;
+    }
+
+    .collage-1 {
+        background: url('../imgs/collage3.jpg');
+        height: 160px;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 15px;
+        /* -webkit-filter: grayscale(1);
+    filter: gray;
+    filter: grayscale(1); */
+    }
+
+    .collage-2 {
+        background: url('../imgs/collage2.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 120px;
+        margin-bottom: 15px;
+
+        /* -webkit-filter: grayscale(1);
+    filter: gray;
+    filter: grayscale(1); */
+    }
+
+    .collage-3 {
+        background: url('../imgs/collage1.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 140px;
+        margin-bottom: 15px;
+        /* -webkit-filter: grayscale(1);
+    filter: gray;
+    filter: grayscale(1); */
+    }
+
+    .collage-4 {
+        background: url('../imgs/collage4.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 110px;
+        margin-bottom: 15px;
+
+        /* -webkit-filter: grayscale(1);
+    filter: gray;
+    filter: grayscale(1); */
+    }
+
+    .collage-5 {
+        background: url('../imgs/collage5.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 140px;
+        margin-bottom: 0px;
+        /* -webkit-filter: grayscale(1);
+        filter: gray;
+        filter: grayscale(1); */
+    }
+
+    .collage-6 {
+        background: url('../imgs/collage6.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 170px;
+        /* -webkit-filter: grayscale(1);
+        filter: gray;
+        filter: grayscale(1); */
+    }
+    /*  ====================================================================== */
+    .proyectos-part {
+        height: auto;
+    }
+    .proyectos-content-2 {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-right: 50px;
+        padding-left: 50px;
+        text-align: start;
+        justify-content: center;
+        position: relative;
+        /* background-color: #000; */
+    }
+
+    .proyecto-line {
+        position: absolute;
+        height: 100%;
+        background-color: #000;
+        width: 4px;
+        top: 0;
+        right: 0;
+    }
+
+    .protectos-title {
+        font-size: 30px;
+        font-family: 'tan-pearl';
+        font-weight: 300;
+        margin-bottom: 40px;
+        margin-top: 70px;
+    }
+    .proyectos-collage {
+        display: flex;
+        width: 100%;
+        gap: 15px;
+        justify-content: center;
+    }
+    .proyectos-columns {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .proyectos-column {
+        width: 70%;
+    }
+    .proyectos-img {
+        width: 100%;
+        height: 130px;
+        background-color: #000;
+
+        margin-bottom: 20px;
+        /* height: 200px; */
+    }
+
+    .proyecto-img-1 {
+        background: url('../imgs/MULTIFAMILIAR.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .proyecto-img-2 {
+        background: url('../imgs/CENTRO_SOCIOSANITARIO.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .proyecto-img-3 {
+        background: url('../imgs/CENTRO_DE_ESTIMULACION.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .proyecto-title {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .proyecto-text {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .proyecto-backhover-img {
+        background-color: #00000038;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+    .proyectos-img:hover .proyecto-backhover-img {
+        opacity: 1;
+    }
+
+    a {
+        text-decoration: none;
+        font-family: 'Raleway', sans-serif;
+    }
+    .btn-ver-proyecto {
+        background-color: #fff;
+        width: 150px;
+        height: 40px;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        margin-bottom: 30px;
+        text-align: center;
+        line-height: 50px;
+        color: #000;
+        font-family: 'Raleway', sans-serif;
+        transition: transform 0.5s;
+    }
+    .btn-ver-proyecto:hover {
+        transform: translateY(-10px);
+    }
+    /* ==================================================================================== */
+    .contacto-content {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        padding-right: 50px;
+        padding-left: 50px;
+        align-items: flex-end;
+        position: relative;
+        padding-bottom: 50px;
+    }
+
+    .contacto-title {
+        font-family: 'tan-pearl';
+        font-size: 30px;
+        font-weight: 300;
+        margin-bottom: 50px;
+    }
+
+    .contacto-item {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    .contacto-item i {
+        margin-right: 10px;
+    }
+    .fa-instagram {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 450px) and (max-height: 667px) {
+    /* =================================================== formacion ============================================================= */
+
+    .formacion-content {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-right: 0px;
+        align-items: flex-end;
+        padding: 0px 45px;
+    }
+
+    .formacion-subcolumn {
+        display: flex;
+        text-align: end;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .formacion-text-content {
+        padding-right: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .formacion-texto {
+        margin-bottom: 5px;
+        font-size: 10px;
+    }
+    .formacion-texto-2 {
+        font-size: 10px;
+    }
+
+    .formacion-subtitle {
+        font-weight: bold;
+        font-size: 13px;
+        letter-spacing: 1px;
+        margin-bottom: 7px;
+    }
+
+    .formacion-column2 {
+        margin-bottom: 20px;
+    }
+
+    .formacion-title {
+        font-family: 'tan-pearl';
+        font-size: 35px;
+        margin-bottom: 30px;
+        font-weight: 300;
+        text-align: end;
+    }
+
+    .formacion-img {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+    .formacion-cursos {
+        font-size: 16px;
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
 }
